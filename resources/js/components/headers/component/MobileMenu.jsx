@@ -2,13 +2,13 @@ import { useContextElement } from "@/context/Context";
 import { icons, menuItems } from "@/data/menu";
 import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 
-import { Link, useLocation } from "react-router-dom";
+import { Head, Link, usePage } from '@inertiajs/react';
 
 import { useEffect, useRef, useState } from "react";
 
 export default function MobileMenu() {
-  const { isChecked, handleToggle } = useContextElement();
-  const { pathname } = useLocation();
+  //const { isChecked, handleToggle } = useContextElement();
+  //const { pathname } = useLocation();
   const [activeParent1, setActiveParent1] = useState(-1);
   const [activeParent2, setActiveParent2] = useState(-1);
   const elementRef = useRef(null);
@@ -33,31 +33,31 @@ export default function MobileMenu() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  useEffect(() => {
-    closeMobileMenu();
-  }, [pathname]);
+  // useEffect(() => {
+  //   closeMobileMenu();
+  // }, [pathname]);
 
   const isMenuActive = (menu) => {
     let isActive = false;
-    if (menu.href) {
-      if (pathname.split("/")[1] == menu.href?.split("/")[1]) {
-        isActive = true;
-      }
-    }
+    // if (menu.href) {
+    //   if (pathname.split("/")[1] == menu.href?.split("/")[1]) {
+    //     isActive = true;
+    //   }
+    // }
     if (menu.subItems) {
       menu.subItems.forEach((el) => {
-        if (el.href) {
-          if (pathname.split("/")[1] == el.href?.split("/")[1]) {
-            isActive = true;
-          }
-        }
+        // if (el.href) {
+        //   if (pathname.split("/")[1] == el.href?.split("/")[1]) {
+        //     isActive = true;
+        //   }
+        // }
         if (el.subItems) {
           el.subItems.map((elm) => {
-            if (elm.href) {
-              if (pathname.split("/")[1] == elm.href?.split("/")[1]) {
-                isActive = true;
-              }
-            }
+            // if (elm.href) {
+            //   if (pathname.split("/")[1] == elm.href?.split("/")[1]) {
+            //     isActive = true;
+            //   }
+            // }
           });
         }
       });
@@ -256,16 +256,16 @@ export default function MobileMenu() {
           >
             <div className="vstack gap-1">
               <span className="fs-7 opacity-60">Select theme:</span>
-              <div className="darkmode-trigger" data-darkmode-switch="">
-                <label className="switch">
-                  <input
-                    checked={!isChecked}
-                    onChange={handleToggle}
-                    type="checkbox"
-                  />
-                  <span className="slider fs-5" />
-                </label>
-              </div>
+              {/*<div className="darkmode-trigger" data-darkmode-switch="">*/}
+              {/*  <label className="switch">*/}
+              {/*    <input*/}
+              {/*      checked={!isChecked}*/}
+              {/*      onChange={handleToggle}*/}
+              {/*      type="checkbox"*/}
+              {/*    />*/}
+              {/*    <span className="slider fs-5" />*/}
+              {/*  </label>*/}
+              {/*</div>*/}
             </div>
           </div>
           <div

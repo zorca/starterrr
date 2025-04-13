@@ -1,14 +1,22 @@
-import { type SharedData } from '@/types';
+import { type BreadcrumbItem, type SharedData } from '@/types';
+import MainLayout from '@/layouts/main-layout';
 import { Head, Link, usePage } from '@inertiajs/react';
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 import Hero from "@/components/homes/home-5/Hero";
 
+const breadcrumbs: BreadcrumbItem[] = [
+    {
+        title: 'Dashboard',
+        href: '/dashboard',
+    },
+];
+
 export default function Welcome() {
     const { auth } = usePage<SharedData>().props;
 
     return (
-        <>
+        <MainLayout breadcrumbs={breadcrumbs}>
             <Head title="Welcome">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -21,6 +29,6 @@ export default function Welcome() {
                 </div>
                 <Footer4 />
             </div>
-        </>
+        </MainLayout>
     );
 }
