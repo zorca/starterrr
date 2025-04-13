@@ -1,4 +1,3 @@
-import AppLayoutTemplate from '@/layouts/app/app-sidebar-layout';
 import { type BreadcrumbItem } from '@/types';
 import { type ReactNode } from 'react';
 import MobileMenu from "@/components/headers/component/MobileMenu";
@@ -8,9 +7,9 @@ interface AppLayoutProps {
     breadcrumbs?: BreadcrumbItem[];
 }
 
-export default ({ children, breadcrumbs, ...props }: AppLayoutProps) => (
-    <AppLayoutTemplate breadcrumbs={breadcrumbs} {...props}>
+export default ({ children }: AppLayoutProps) => (
+    <div>
         {children}
         <MobileMenu />
-    </AppLayoutTemplate>
+    </div>
 );
