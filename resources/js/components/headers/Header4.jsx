@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Nav3 from './component/Nav3';
 
 import { openMobileMenu } from '@/utlis/toggleMobileMenu';
-import LanguageSelect2 from '../common/LanguageSelect2';
 
 export default function Header4() {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -37,7 +36,7 @@ export default function Header4() {
                 data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
             >
                 <div style={{ '--uc-nav-height': '80px' }} className="uc-navbar-main">
-                    <div className="container max-w-xl">
+                    <div className="container max-w-1200">
                         <div className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white">
                             <div className="uc-navbar-left">
                                 <div className="uc-logo text-dark dark:text-white">
@@ -52,20 +51,19 @@ export default function Header4() {
                                         />
                                     </Link>
                                 </div>
-                                <ul className="uc-navbar-nav d-none lg:d-flex fw-medium gap-3 xl:gap-4 ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
+                                <ul className="uc-navbar-nav d-none lg:d-flex gap-3 xl:gap-4 ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
                                     <Nav3 />
                                 </ul>
                             </div>
-                            <div className="uc-navbar-right">
-                                <ul className="uc-navbar-nav d-none lg:d-flex fw-medium gap-3 xl:gap-4 ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
-                                    <LanguageSelect2 />
-                                </ul>
-                                <Link
-                                    className="btn btn-md btn-primary rounded-default text-none d-none lg:d-inline-flex shadow-xs lg:px-3"
-                                    to={`/page-contact`}
-                                >
-                                    Send inquiry
-                                </Link>
+                            <div className="uc-navbar-right items-center justify-center">
+                                <div className="">
+                                    <p className="fs-7 text-end">Техподдержка 24/7</p>
+                                    <div>
+                                        <a className="uc-link text-underline dark:text-secondary" href="tel:79611480024">
+                                            +7 (961) 148-00-24
+                                        </a>
+                                    </div>
+                                </div>
                                 <a className="d-block lg:d-none uc-icon uc-navbar-toggle-icon" onClick={openMobileMenu}>
                                     <svg width={20} height={20} viewBox="0 0 20 20">
                                         <style

@@ -1,12 +1,10 @@
-import { Link } from '@inertiajs/react';
-
 export default function Hero() {
     return (
         <div id="hero_header" className="hero-header hero-five-scene section panel overflow-hidden">
             <div className="position-cover from-secondary bg-gradient-to-t to-white dark:from-gray-800 dark:to-gray-900" />
             <div className="section-outer panel pt-2 xl:pt-2">
-                <div className="container max-w-xl">
-                    <div className="section-inner panel">
+                <div className="container max-w-1200">
+                    <div className="section-inner panel pt-8 pb-8">
                         <div className="row child-cols-12 g-6 lg:g-0 items-center justify-center lg:justify-between">
                             <div className="sm:col-6 lg:col-6">
                                 <div
@@ -20,43 +18,36 @@ export default function Hero() {
                                         быстро, удобно, законно!
                                     </h1>
 
-                                    <p className="fs-6 xl:fs-4">
+                                    <p className="fs-6 xl:fs-5">
                                         Мы создали крутую программу
                                         <br />
                                         для получения электронных путевых листов
                                         <br />
                                         водителями такси с наилучшими условиями.
                                     </p>
-                                    <div className="vstack mt-2 gap-1 xl:mt-4">
-                                        <form onSubmit={(e) => e.preventDefault()} className="row child-cols g-1">
-                                            <div>
+                                    <div className="vstack mt-2 gap-1">
+                                        <div>
+                                            <p className="text-primary">Скачайте приложение и зарегистрируйтесь</p>
+                                        </div>
+                                        <div className="row child-cols g-1 items-center justify-center">
+                                            <div className="col-12 sm:col-auto">
+                                                <a className="btn btn-md btn-primary rounded-default h-48px lg:min-w-150px w-100 text-white" href="#">
+                                                    Скачать приложение
+                                                </a>
+                                            </div>
+                                            <div className="">
                                                 <div className="form-group inline-block">
-                                                    <input
-                                                        type="email"
-                                                        className="form-control rounded-default h-48px w-full bg-white text-black"
-                                                        placeholder="Enter your email"
-                                                        required
-                                                    />
+                                                    <a className="uc-link text-underline dark:text-secondary" href="#">
+                                                        Выдача лицензий
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div className="col-12 sm:col-auto">
-                                                <button className="btn btn-md btn-primary rounded-default h-48px lg:min-w-150px w-100 text-white">
-                                                    Get a demo
-                                                </button>
-                                            </div>
-                                        </form>
-                                        <p className="fs-7 text-dark text-opacity-70 dark:text-white">
-                                            We care about your data in our
-                                            <Link to={`/page-privacy`} className="uc-link text-underline dark:text-secondary">
-                                                privacy policy
-                                            </Link>
-                                            .
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="sm:col-auto">
-                                <div className="hero-scroll-scene panel sm:w-550px sm:h-600px lg:w-450px lg:h-500px xl:w-600px xl:h-650px">
+                            <div className="sm:col-6 lg:col-6">
+                                <div className="hero-scroll-scene panel sm:w-500px sm:h-600px lg:w-450px lg:h-500px xl:w-500px xl:h-500px">
                                     <div
                                         className="position-absolute sm:w-180px lg:w-200px xl:w-250px d-none sm:d-block"
                                         style={{ bottom: '0', left: '0' }}
@@ -65,7 +56,7 @@ export default function Hero() {
                                     </div>
                                     <div
                                         className="featured-image position-absolute sm:w-250px lg:w-200px xl:w-400px m-0 overflow-hidden"
-                                        style={{ bottom: '0', left: '150px' }}
+                                        style={{ bottom: '0', left: '110px' }}
                                     >
                                         <img className="image" alt="Manager" src="/assets/images/people/girl-01.png" width="380" height="450" />
                                     </div>
@@ -77,6 +68,9 @@ export default function Hero() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="row">
+                            <img src="/assets/images/banners/first.png" />
                         </div>
                     </div>
                 </div>

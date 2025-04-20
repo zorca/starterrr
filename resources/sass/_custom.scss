@@ -90,6 +90,11 @@
     }
   }
 }
+
+.max-w-1200 {
+    max-width: 1200px !important;
+}
+
 @media (min-width: 1000px) {
   .sticky-element {
     position: sticky !important;
