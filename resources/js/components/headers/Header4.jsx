@@ -1,4 +1,3 @@
-import { Link } from '@inertiajs/react';
 import { useEffect, useState } from 'react';
 import Nav3 from './component/Nav3';
 
@@ -40,7 +39,7 @@ export default function Header4() {
                         <div className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white">
                             <div className="uc-navbar-left">
                                 <div className="uc-logo text-dark dark:text-white">
-                                    <Link className="panel text-none" to={`/`} style={{ width: 140 }}>
+                                    <a className="panel text-none" href={`/`} style={{ width: 140 }}>
                                         <img className="dark:d-none" alt="Lexend" src="/assets/images/common/logo.png" width="85" height="58" />
                                         <img
                                             className="d-none dark:d-block"
@@ -49,7 +48,7 @@ export default function Header4() {
                                             width="85"
                                             height="58"
                                         />
-                                    </Link>
+                                    </a>
                                 </div>
                                 <ul className="uc-navbar-nav d-none lg:d-flex gap-3 xl:gap-4 ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
                                     <Nav3 />

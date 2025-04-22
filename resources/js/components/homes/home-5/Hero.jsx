@@ -54,10 +54,7 @@ export default function Hero() {
                                     >
                                         <img alt="Manager" src="/assets/images/people/man-01.png" width="256" height="422" />
                                     </div>
-                                    <div
-                                        className="featured-image position-absolute sm:w-250px lg:w-200px xl:w-400px m-0 overflow-hidden"
-                                        style={{ bottom: '0', left: '110px' }}
-                                    >
+                                    <div className="featured-image position-lg-absolute sm:w-250px lg:w-200px xl:w-400px m-0 overflow-hidden">
                                         <img className="image" alt="Manager" src="/assets/images/people/girl-01.png" width="380" height="450" />
                                     </div>
                                     <div
