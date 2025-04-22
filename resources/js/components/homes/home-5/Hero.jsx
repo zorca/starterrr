@@ -18,7 +18,7 @@ export default function Hero() {
                                         быстро, удобно, законно!
                                     </h1>
 
-                                    <p className="fs-6 xl:fs-5">
+                                    <p className="color-high-gray fs-6 xl:fs-5">
                                         Мы создали крутую программу
                                         <br />
                                         для получения электронных путевых листов
@@ -35,8 +35,8 @@ export default function Hero() {
                                                     Скачать приложение
                                                 </a>
                                             </div>
-                                            <div className="">
-                                                <div className="form-group inline-block">
+                                            <div>
+                                                <div className="form-group px-lg-4 inline-block">
                                                     <a className="uc-link text-underline dark:text-secondary" href="#">
                                                         Выдача лицензий
                                                     </a>
@@ -54,7 +54,7 @@ export default function Hero() {
                                     >
                                         <img alt="Manager" src="/assets/images/people/man-01.png" width="256" height="422" />
                                     </div>
-                                    <div className="featured-image position-lg-absolute sm:w-250px lg:w-200px xl:w-400px m-0 overflow-hidden">
+                                    <div className="featured-image position-lg-absolute sm:w-250px lg:w-350px xl:w-400px m-0 overflow-hidden">
                                         <img className="image" alt="Manager" src="/assets/images/people/girl-01.png" width="380" height="450" />
                                     </div>
                                     <div

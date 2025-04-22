@@ -6,7 +6,7 @@ export default function Epl() {
                     <div className="section-inner panel">
                         <div className="panel vstack items-center gap-4 sm:gap-6 xl:gap-8">
                             <div className="vstack gap-2">
-                                <h2 className="h4 sm:h3 xl:h2 m-0">Кто может получить ЭПЛ</h2>
+                                <h2 className="section-title sm:h3 xl:h2 m-0">Кто может получить ЭПЛ</h2>
                                 <p className="color-high-gray">
                                     Получать электронные путевые листы
                                     <br />
@@ -106,7 +106,7 @@ export default function Epl() {
                                 </div>
                             </div>
                             <div className="vstack">
-                                <p className="text-primary text-center">
+                                <p className="text-primary fs-5 fw-medium text-center">
                                     Не нужно приезжать в офис, получение онлайн через наше приложение у вас в телефоне!
                                 </p>
                             </div>

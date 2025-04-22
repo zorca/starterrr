@@ -56,7 +56,7 @@ export default function Header4() {
                             </div>
                             <div className="uc-navbar-right items-center justify-center">
                                 <div className="">
-                                    <p className="fs-7 text-end">Техподдержка 24/7</p>
+                                    <p className="color-mid-gray fs-8 text-end">Техподдержка 24/7</p>
                                     <div>
                                         <a className="uc-link text-underline dark:text-secondary" href="tel:79611480024">
                                             +7 (961) 148-00-24

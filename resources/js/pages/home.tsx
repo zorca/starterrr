@@ -3,11 +3,13 @@ import Header4 from '@/components/headers/Header4';
 import Action from '@/components/homes/home-5/Action';
 import Epl from '@/components/homes/home-5/Epl';
 import Faq from '@/components/homes/home-5/Faq';
+import Gai from '@/components/homes/home-5/Gai';
 import Hero from '@/components/homes/home-5/Hero';
 import Qr from '@/components/homes/home-5/Qr';
+import Region from '@/components/homes/home-5/Region';
 import MainLayout from '@/layouts/main-layout';
-import { type BreadcrumbItem, type SharedData } from '@/types';
-import { Head, usePage } from '@inertiajs/react';
+import { type BreadcrumbItem } from '@/types';
+import { Head } from '@inertiajs/react';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -17,14 +19,9 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function Welcome() {
-    const { auth } = usePage<SharedData>().props;
-
     return (
         <MainLayout breadcrumbs={breadcrumbs}>
-            <Head title="Welcome">
-                <link rel="preconnect" href="https://fonts.bunny.net" />
-                <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-            </Head>
+            <Head title="Главная" />
             <div className="page-wrapper uni-body panel bp-xs bp-sm bp-md bp-lg dom-ready bp-xl bp-xxl overflow-x-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200">
                 <Header4 />
                 <div id="wrapper" className="wrap">
@@ -32,6 +29,8 @@ export default function Welcome() {
                     <Qr />
                     <Epl />
                     <Action />
+                    <Region />
+                    <Gai />
                     <Faq />
                 </div>
                 <Footer4 />
