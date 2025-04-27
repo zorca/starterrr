@@ -25,7 +25,7 @@ export default function Hero() {
                                         <br />
                                         водителями такси с наилучшими условиями.
                                     </p>
-                                    <div className="vstack mt-2 gap-1">
+                                    <div className="vstack mt-2 gap-2">
                                         <div>
                                             <p className="text-primary">Скачайте приложение и зарегистрируйтесь</p>
                                         </div>

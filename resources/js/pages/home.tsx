@@ -5,6 +5,9 @@ import Epl from '@/components/homes/home-5/Epl';
 import Faq from '@/components/homes/home-5/Faq';
 import Gai from '@/components/homes/home-5/Gai';
 import Hero from '@/components/homes/home-5/Hero';
+import Ofis from '@/components/homes/home-5/Ofis';
+import Price from '@/components/homes/home-5/Price';
+import Program from '@/components/homes/home-5/Program';
 import Qr from '@/components/homes/home-5/Qr';
 import Region from '@/components/homes/home-5/Region';
 import MainLayout from '@/layouts/main-layout';
@@ -31,6 +34,9 @@ export default function Welcome() {
                     <Action />
                     <Region />
                     <Gai />
+                    <Ofis />
+                    <Program />
+                    <Price />
                     <Faq />
                 </div>
                 <Footer4 />

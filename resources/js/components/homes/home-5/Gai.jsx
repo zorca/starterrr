@@ -21,7 +21,9 @@ export default function Gai() {
                             </div>
                         </div>
                         <div className="text-center">
-                            <p className="fs-5 text-primary pt-4">Водителям не было выписано ни одного штрафа за наши электронные путевые.</p>
+                            <p className="fs-5 text-primary fw-medium pt-4">
+                                Водителям не было выписано ни одного штрафа за наши электронные путевые.
+                            </p>
                         </div>
                     </div>
                 </div>
